@@ -16,7 +16,7 @@ ENV SSR_PORT 1000
 ENV SVD_PORT 1080
 
 ENV DEFAULT_USERNAME root
-ENV DEFAULT_PASSWORD password
+ENV DEFAULT_PASSWORD passwords
 
 # -----------------------------------------------------------------------------
 # Copy files into container
