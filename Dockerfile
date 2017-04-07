@@ -14,6 +14,7 @@ MAINTAINER shijh666
 ENV SSHD_PORT 22
 ENV SSR_PORT 1000
 ENV SVD_PORT 1080
+ENV N2N_PORT 8989
 
 ENV DEFAULT_USERNAME root
 ENV DEFAULT_PASSWORD passwords00
@@ -56,7 +57,7 @@ RUN ssh-keygen -q -t ecdsa -f /etc/ssh/ssh_host_ecdsa_key -N ''
 RUN ssh-keygen -q -t dsa -f /etc/ssh/ssh_host_ed25519_key  -N ''
 
 EXPOSE $SSHD_PORT
-
+EXPOSE $N2N_PORT
 # -----------------------------------------------------------------------------
 # Install NetSpeeder
 # -----------------------------------------------------------------------------
