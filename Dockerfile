@@ -23,7 +23,9 @@ ENV DEFAULT_PASSWORD passwords00
 # -----------------------------------------------------------------------------
 ADD etc /etc/
 ADD root /root/
-
+ADD supernode /usr/bin/supernode
+ADD edge /usr/bin/edge
+RUN chmod 777 /usr/bin/supernode && chmod 777 /usr/bin/edge
 # -----------------------------------------------------------------------------
 # Install necessary packages
 # -----------------------------------------------------------------------------
